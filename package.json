@@ -1,6 +1,7 @@
 {
   "name": "moutafatin",
   "version": "1.0.1",
+  "type": "module",
   "bin": {
     "moutafatin": "index.js"
   },
@@ -10,5 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "clear-any-console": "^1.16.2"
+  }
 }
