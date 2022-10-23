@@ -15,5 +15,6 @@
   "dependencies": {
     "clear-any-console": "^1.16.2",
     "cli-welcome": "^2.2.2"
-  }
+  },
+  "keywords": ["oussama moutafatin","moutafatin"]
 }
