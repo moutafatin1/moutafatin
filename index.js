@@ -1,9 +1,16 @@
 #!/usr/bin/env node
+import chalk from "chalk";
 import welcome from "cli-welcome";
-import pkgJson from "./package.json" assert { type: "json" };
+import { readFile } from "fs/promises";
+
+const githubClr = chalk.white.bgHex("6cc644").bold;
+
+const pkgJson = JSON.parse(
+  await readFile(new URL("./package.json", import.meta.url))
+);
 
 welcome({
-  title: pkgJson.name,
+  title: "Oussama Moutafatin",
   tagLine: "Get to know Moutafatin",
   description: pkgJson.description,
   version: pkgJson.version,
@@ -14,7 +21,10 @@ welcome({
 });
 
 console.log(`
-Oussama Moutafatin
 
-bio....
+${chalk.dim("bio....")}
+
+📖 ${githubClr(" GitHub ")}: ${chalk.dim.underline(
+  "https://github.com/moutafatin1/moutafatin"
+)}
 `);
