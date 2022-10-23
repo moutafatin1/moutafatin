@@ -10,8 +10,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Oussama Moutafatin",
+    "email": "moutafatin3@gmail.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "clear-any-console": "^1.16.2",
     "cli-welcome": "^2.2.2"
@@ -19,5 +22,6 @@
   "keywords": [
     "oussama moutafatin",
     "moutafatin"
-  ]
+  ],
+  "repository": "moutafatin1/moutafatin"
 }
